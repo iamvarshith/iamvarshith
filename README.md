@@ -24,8 +24,8 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://codepen.io/iamvarshith" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="iamvarshith" height="30" width="40" /></a>
-<a href="https://dev.to/iamvarshith.dev" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="iamvarshith" height="30" width="40" /></a>
-<a href="https://twitter.com/iamvarshith" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="iamvarshith" height="30" width="40" /></a>
+<a href="https://dev.to/iamvarshith" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="iamvarshith" height="30" width="40" /></a>
+<a href="https://twitter.com/varshithvmv" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="varshithvmv" height="30" width="40" /></a>
 <a href="https://instagram.com/sharmavmv" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sharmavmv" height="30" width="40" /></a>
 <a href="https://www.hackerrank.com/@varshithmuthya_1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@varshithmuthya_1" height="30" width="40" /></a>
 <a href="https://discord.gg/Tomdyck&harry#6741" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="Tomdyck&harry#6741" height="30" width="40" /></a>
