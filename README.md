@@ -11,7 +11,7 @@
 
 - 👨‍💻 All of my projects are available at [http://iamvarshith.dev](http://iamvarshith.dev)
 
-- 📝 I regularly write articles on [http://iamvarshith.dev](http://iamvarshith.dev)
+- 📝 I regularly write articles on [https://blog.iamvarshith.dev](https://blog.iamvarshith.dev)
 
 - 💬 Ask me about **FLASK,DJANGO,AWS,Problem Solving,Node Js**
 
