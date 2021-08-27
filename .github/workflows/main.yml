@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  iamvarshith_dev:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,7 +21,7 @@ jobs:
 
       - name: Deploy static site to S3 bucket
         run: aws s3 sync . s3://k.iamvarshith.dev --delete
-  deploy2:
+  www_iamvarshith_dev:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
