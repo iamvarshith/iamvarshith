@@ -2765,7 +2765,9 @@ h6 {
   .personal_text .basic_info li:last-child {
     margin-bottom: 0px; }
 .personal_text .personal_social {
-  margin-top: 45px; }
+  margin-top: 45px;
+  display: flex;
+}
   .personal_text .personal_social li {
     display: inline-block;
     margin-right: 7px; }
