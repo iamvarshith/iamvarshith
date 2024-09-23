@@ -2,6 +2,7 @@
 /*----------------------------------------------------*/
 /*font Variables*/
 /*Color Variables*/
+
 /*=================== fonts ====================*/
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
 /*---------------------------------------------------- */
@@ -13,6 +14,38 @@
   list-style: none;
   margin: 0px;
   padding: 0px; }
+
+
+    /* Styling for the auto-typing text */
+    #typed-text {
+        font-weight: bold;
+        background-color: #ffeb3b; /* Bright yellow background */
+        color: #000; /* Black text for contrast */
+        padding: 5px 10px; /* Add some padding around the text */
+        border-radius: 5px; /* Rounded corners for smoother look */
+        display: inline-block;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    /* Animate the text to "pop" slightly when typed */
+    .typed-text-effect {
+        transform: scale(1.1); /* Slight scale up effect */
+    }
+
+    /* Customize the blinking cursor */
+    .typed-cursor {
+        font-size: 2rem;
+        color: #ffeb3b; /* Keep the cursor color matching the background */
+        animation: blink 0.7s infinite; /* Blinking animation */
+    }
+
+    /* Cursor blinking animation */
+    @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+    }
+
+
 
 a {
   text-decoration: none;
@@ -215,7 +248,8 @@ button:focus {
     right: 0;
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #000000, #14213d, #fca311);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
@@ -286,7 +320,8 @@ button:focus {
   z-index: 1;
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #000000, #14213d, #fca311);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /*background: #c31432;  !* fallback for old browsers *!*/
   /*background: -webkit-linear-gradient(to right, #240b36, #c31432);  !* Chrome 10-25, Safari 5.1-6 *!*/
@@ -371,7 +406,8 @@ button:focus {
   min-height: 350px;
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #000000, #14213d, #fca311);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /*background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);*/
   /*background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);*/
@@ -2550,7 +2586,8 @@ h6 {
         align-self: center;
         background: #0F2027; /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #000000, #14213d, #fca311);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
 /*  background: #c31432; !* fallback for old browsers *!*/
       /*  background: -webkit-linear-gradient(to right, #240b36, #c31432); !* Chrome 10-25, Safari 5.1-6 *!*/
@@ -2562,14 +2599,10 @@ h6 {
 /* My Tabs Area css
 ============================================================================================ */
 .mytabs_area {
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  /*background: #240b36; !* fallback for old browsers *!*/
-  /*background: -webkit-linear-gradient(to right, #dd1818, #240b36); !* Chrome 10-25, Safari 5.1-6 *!*/
-  /*background: linear-gradient(to right, #dd1818, #240b36); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+  background-color: #14213d;  /* Dark blue */
 }
+
+
 
 .tabs_inner .nav.nav-tabs {
   display: block;
@@ -2705,6 +2738,85 @@ h6 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
+     .feature_item {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        transition: height 0.4s ease, all 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 450px; /* Initial height */
+        position: relative; /* For absolute positioning of buttons */
+        padding-bottom: 60px; /* Extra space at the bottom for buttons */
+    }
+
+    .feature_item.expanded {
+        height: auto;
+        min-height: 550px;
+    }
+
+    .feature_item img {
+        max-height: 250px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .feature_item p {
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: height 0.3s ease;
+    }
+
+    .feature_item .description_expanded {
+        white-space: normal;
+        height: auto;
+    }
+
+    .read-more {
+        color: #6c757d; /* Gray color */
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: right;
+        display: block;
+        position: absolute; /* Absolute positioning to prevent collision */
+        bottom: 35px; /* Ensure it's above the 'View Project' button */
+        right: 15px;
+    }
+
+    .btn-custom {
+        align-self: center; /* Center the View Project button */
+        position: absolute;
+        bottom: 10px; /* Fixed at the bottom */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
+        background-color: #0d6efd;
+        color: white;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+        .feature_item {
+            height: auto;
+        }
+
+        .read-more, .btn-custom {
+            position: static; /* Remove absolute positioning on smaller screens */
+            margin-top: 10px; /* Add margin for spacing */
+            transform: none; /* Reset transform for smaller screens */
+        }
+    }
 /* End Feature Area css
 ============================================================================================ */
 /* Personal Profile Area css
@@ -2786,7 +2898,8 @@ h6 {
     .personal_text .personal_social li:hover a {
       background: #0F2027;  /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #2C5364, #203A43, #0F2027);} /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, #000000, #14213d, #fca311);
+} /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 /* End Personal Profile Area css
@@ -2874,7 +2987,8 @@ h6 {
 .testimonials_area {
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #000000, #14213d, #fca311);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
   .testimonials_area.testi_two {
     background: #fff; }
@@ -3039,3 +3153,437 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.fa, .fab {
+  font-size: 30px!important;
+}
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+
+    /* Styling for the auto-typing text */
+    #typed-text {
+        font-weight: bold;
+        background-color: #fca311; /* Bright orange background */
+        color: #000000; /* Black text for contrast */
+        padding: 5px 10px; /* Add some padding around the text */
+        border-radius: 5px; /* Rounded corners for smoother look */
+        display: inline-block;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    /* Animate the text to "pop" slightly when typed */
+    .typed-text-effect {
+        transform: scale(1.1); /* Slight scale-up effect */
+    }
+
+    /* Customize the blinking cursor */
+    .typed-cursor {
+        font-size: 2rem;
+        color: #fca311; /* Keep the cursor color matching the background */
+        animation: blink 0.7s infinite; /* Blinking animation */
+    }
+
+    /* Cursor blinking animation */
+    @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+    }
+
+
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: #fca311; /* Default link color orange */
+}
+a:hover, a:focus {
+    color: #14213d; /* Dark blue on hover */
+    text-decoration: none;
+    outline: none;
+}
+
+.row.m0 {
+  margin: 0px; }
+
+.row{
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+.navbar-brand img{
+  max-width: 15vw;
+}
+body {
+  line-height: 26px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #14213d; /* Dark Blue for body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  color: #000000; /* Black for headings */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.p0 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.p_120 {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
+.p_100 {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.pad_top {
+  padding-top: 120px; }
+
+.pad_bt {
+  padding-bottom: 120px; }
+
+.mt-25 {
+  margin-top: 25px; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px; } }
+
+@media (min-width: 1620px) {
+  .box_1620 {
+    max-width: 1620px;
+    margin: auto;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px; } }
+/* Main Title Area css
+============================================================================================ */
+.main_title {
+  text-align: center;
+  max-width: 670px;
+  margin: 0px auto 75px; }
+  .main_title h2 {
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    color: #000000; /* Black headings */
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .main_title p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 26px;
+    color: #14213d; /* Dark Blue text */
+    margin-bottom: 0px; }
+.text-white h2{
+  color: #ffffff; /* White for text */
+}
+.text-white p{
+  color: #e5e5e5; /* Light Grey text */
+}
+/* End Main Title Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.header_area {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: background 0.4s, all 0.3s linear; }
+  .header_area .navbar {
+    background: #14213d; /* Dark Blue background for navbar */
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px; }
+    .header_area .navbar .nav .nav-item {
+      margin-right: 45px; }
+      .header_area .navbar .nav .nav-item .nav-link {
+        font: 500 12px/120px "Roboto", sans-serif;
+        text-transform: uppercase;
+        color: #ffffff; /* White text for nav links */
+        padding: 0px;
+        display: inline-block; }
+      .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+        color: #fca311; /* Orange text on hover */
+      }
+
+/* Home Banner Area */
+.home_banner_area {
+  position: relative;
+  z-index: 1;
+  background: #14213d;  /* Dark blue background */
+  margin-bottom: 200px;
+}
+.home_banner_area .box_1620 {
+  min-height: 700px;
+  border-radius: 12px;
+  position: relative;
+  bottom: -200px;
+  background: #ffffff; /* White background */
+  padding: 30px;
+  box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3); }
+.home_banner_area .banner_inner {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  display: flex; }
+  .home_banner_area .banner_inner .banner_content {
+    color: #000000; /* Black text */
+    vertical-align: middle;
+    align-self: center;
+    text-align: left; }
+    .home_banner_area .banner_inner .banner_content .media .d-flex {
+      padding-right: 125px; }
+    .home_banner_area .banner_inner .banner_content .media .media-body {
+      vertical-align: middle;
+      align-self: center; }
+
+/* Buttons */
+.main_btn, .btn-custom, .submit_btn {
+  background-color: #fca311; /* Orange buttons */
+  border: 1px solid #fca311;
+  color: #ffffff; /* White text */
+  transition: all 0.3s ease-in-out;
+}
+.main_btn:hover, .btn-custom:hover, .submit_btn:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #fca311; /* Orange text on hover */
+  border: 1px solid #fca311;
+}
+
+.top_menu {
+  background: #f9f9ff; }
+  .top_menu .header_social li {
+    display: inline-block;
+    margin-right: 15px; }
+    .top_menu .header_social li a {
+      font-size: 14px;
+      color: #ffffff;
+      display: inline-block;
+      line-height: 42px;
+      transition: all 300ms linear 0s; }
+    .top_menu .header_social li:last-child {
+      margin-right: 0px; }
+    .top_menu .header_social li:hover a {
+      color: #fca311; /* Orange icons on hover */
+    }
+
+.tools_expert {
+  padding: 20px 0px 0px 0px; }
+  .tools_expert .skill_main .skill_item {
+    margin-bottom: 18px; }
+    .tools_expert .skill_main .skill_item:last-child {
+      margin-bottom: 0px; }
+    .tools_expert .skill_main .skill_item h4 {
+      text-align: none;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #000000; /* Black text */
+      margin-bottom: 15px; }
+    .tools_expert .skill_main .skill_item .progress_br {
+      border: 1px solid #eeeeee;
+      padding: 5px;
+      border-radius: 10px; }
+    .tools_expert .skill_main .skill_item .progress {
+      height: 10px;
+      border-radius: 10px;
+      background: #e5e5e5; /* Light grey background */
+    }
+    .tools_expert .skill_main .skill_item .progress .progress-bar {
+      width: 0%;
+      transition: width .6s ease;
+      height: 10px;
+      border-radius: 5px;
+      vertical-align: middle;
+      align-self: center;
+      background: #fca311; /* Orange progress bar */
+    }
+
+/* Profile Area */
+.profile_area .col-lg-7 {
+  padding-right: 50px; }
+.profile_area .personal_text {
+  background: #ffffff; /* White background */
+  padding: 35px 50px 0px 0px; }
+  .profile_area .personal_text h6 {
+    color: #000000; /* Black text */
+    font-size: 14px;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 15px; }
+  .profile_area .personal_text h3 {
+    color: #000000; /* Black text */
+    font-size: 35px;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 25px; }
+  .profile_area .personal_text h4 {
+    color: #000000; /* Black text */
+    font-size: 22px;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 15px; }
+  .profile_area .personal_text p {
+    color: #14213d; /* Dark blue text */
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 28px; }
+  .profile_area .personal_text .basic_info li {
+    list-style: none;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #14213d; /* Dark blue text */
+    margin-bottom: 12px; }
+    .profile_area .personal_text .basic_info li i {
+      color: #fca311; /* Orange icons */
+      padding-right: 20px; }
+    .profile_area .personal_text .basic_info li a {
+      color: #14213d; /* Dark blue text */
+      transition: all 0.3s ease; }
+    .profile_area .personal_text .basic_info li a:hover {
+      color: #fca311; /* Orange text on hover */
+    }
+  .profile_area .personal_text .personal_social {
+    margin-bottom: 40px; }
+    .profile_area .personal_text .personal_social li {
+      display: inline-block;
+      margin-right: 20px; }
+      .profile_area .personal_text .personal_social li a {
+        background: #14213d; /* Dark blue background for social icons */
+        display: block;
+        height: 42px;
+        width: 42px;
+        line-height: 42px;
+        color: #ffffff;
+        transition: all 0.3s ease; }
+      .profile_area .personal_text .personal_social li:hover a {
+        background: #fca311; /* Orange on hover */
+        color: #ffffff; }
+  .profile_area .personal_text .btn-custom {
+    margin-top: 20px; }
+
+.testimonials_area {
+  background: #14213d; /* Dark blue background */
+  color: #ffffff; /* White text */
+}
+.testi_item {
+  background: #ffffff; /* White testimonial background */
+  color: #14213d; /* Dark Blue text */
+  border: 1px solid #e5e5e5; /* Light Grey border */
+}
+.testi_item h4 {
+  color: #000000; /* Black text */
+}
+.testi_item p {
+  color: #14213d; /* Dark Blue text */
+}
+
+/* Feature Items */
+.feature_item {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e5e5e5; /* Light Grey border */
+  color: #14213d; /* Dark Blue text */
+}
+.feature_item h4 {
+  color: #000000; /* Black heading */
+}
+.feature_item p {
+  color: #14213d; /* Dark Blue text */
+}
+.feature_item i:before {
+  color: #fca311; /* Orange icons */
+}
+.feature_item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer_area {
+  background: #000000; /* Black background */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer_area .copy_right_text p {
+  color: #e5e5e5; /* Light Grey text */
+}
+
+/* Main widget styles */
+        #leetcode-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            height: 300px;
+            background-color: #14213D; /* Color from your palette */
+            border-radius: 8px;
+            color: white;
+            padding: 10px;
+            z-index: 9999;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: move;
+            display: none; /* Hidden initially (minimized state) */
+        }
+
+        /* Header for the widget */
+        #leetcode-widget-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FCA311; /* Color from your palette */
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        #minimize-button {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            color: white;
+        }
+
+        /* Minimized icon */
+        #leetcode-widget-minimized {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #FCA311;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            cursor: move;
+        }
+
+        #leetcode-widget-minimized img {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* The stats inside the widget */
+        .leetcode-stats {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+

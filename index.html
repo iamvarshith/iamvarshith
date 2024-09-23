@@ -49,6 +49,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://kit.fontawesome.com/d9bc78fa7c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
     <link rel="stylesheet" href="vendors/linericon/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -117,12 +119,12 @@
                         <div class="personal_text">
                             <h6>Hello Everybody, i am</h6>
                             <h1>Muthya Varshith Vankamamidi</h1>
-                            <h4>Software Developer</h4>
-                            <p> I am a software developer who enjoys working on challenging projects that use cutting-edge technologies.
-                                At the same time, learning to gain new skills and abilities.
-                                I've been trying to improve my skills and fix my shortcomings lately.
-                                I am presently employed as an Operations Engineer at <a href="https://www.hackerrank.com/">Hackerrank</a>.
-                                Currently working on Kubernetes and Cloud Architecture, which has been a lot of fun and learning</p>
+                            <h4><span id="typed-text"></span></h4>
+                            <p> I'm a passionate software developer who loves diving into the complexities of system
+                                design and architecture. I get a real kick out of building things from the ground up,
+                                creating scalable, efficient, and maintainable solutions that are built to last. My
+                                focus is always on clean, modular architecture and finding innovative ways to solve
+                                tough technical problems.</p>
                             <ul class="list basic_info">
                                 <li><a target="_blank" href=""><i class="lnr lnr-calendar-full"></i> 2nd April, 2000</a>
                                 </li>
@@ -131,9 +133,8 @@
                                 <li><a target="_blank" href="mailto:varshithvmv@gmail.com"><i
                                         class="lnr lnr-envelope"></i> varshithvmv@gmail.com</a></li>
                                 <li><a target="_blank" href="https://goo.gl/maps/APmRZaevt3b7FqEZ7"><i
-                                        class="lnr lnr-home"></i> 11-2-83,Balaji Nagar,
-                                    Khammam,507001<p style=" text-indent: 42px">Telangana, India</p>
-                                </a></li>
+                                        class="lnr lnr-home"></i> 11-2-83,Balaji Nagar, Khammam, 507001<p
+                                        style=" text-indent: 42px">Telangana, India</p></a></li>
                             </ul>
                             <ul class="list personal_social">
                                 <li><a target="_blank" href="https://www.hackerrank.com/iamvarshith"><i
@@ -146,7 +147,6 @@
                                         class="fab fa-instagram"></i></a></li>
                                 <li><a target="_blank" href="https://www.linkedin.com/in/muthyavarshith/"><i
                                         class="fa fa-linkedin"></i></a></li>
-
                             </ul>
                         </div>
                     </div>
@@ -155,6 +155,8 @@
         </div>
     </div>
 </section>
+
+
 <!--================End Home Banner Area =================-->
 
 <!--================Welcome Area =================-->
@@ -164,40 +166,44 @@
             <div class="col-lg-6">
                 <div class="welcome_text">
                     <h4>About Myself</h4>
-                    <p>I'm a computer science nerd, currently working in a dream company with a fantastic team to make the world flat, with one programmer at a time. 😇
-Working on new technologies and addressing challenges with code is what I do daily at Hackerrank.
-😎 Right now: Currently working on Kubernetes and Cloud Architecture, which has been a lot of fun and learning.
-😜 Hobbies: When time allows, I enjoy going on bicycle rides. If I'm in the mood, I also enjoy cooking.</p>
-                    <!--                    <div class="row">-->
-                    <!--                        <div class="col-md-4">-->
-                    <!--                            <div class="wel_item">-->
-                    <!--                                <i class="lnr lnr-database"></i>-->
-                    <!--                                <h4>$2.5M</h4>-->
-                    <!--                                <p>Total Donation</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-md-4">-->
-                    <!--                            <div class="wel_item">-->
-                    <!--                                <i class="lnr lnr-book"></i>-->
-                    <!--                                <h4>1465</h4>-->
-                    <!--                                <p>Total Projects</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col-md-4">-->
-                    <!--                            <div class="wel_item">-->
-                    <!--                                <i class="lnr lnr-users"></i>-->
-                    <!--                                <h4>3965</h4>-->
-                    <!--                                <p>Total Volunteers</p>-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
+                    <p style="text-indent: 30px;">
+                        Hey there! I’m your friendly neighborhood tech enthusiast. Whether it’s diving headfirst into
+                        <span style="border-bottom: 2px solid #fca311; font-weight: bold;">coding</span> or tinkering
+                        with the latest gadget, I'm all in! When I'm not trying to figure out why my code isn’t working
+                        (spoiler: it’s usually a missing semicolon), I’m deep into an intense <span
+                            style="border-bottom: 2px solid #fca311; font-weight: bold;">CS:GO</span> match, where I
+                        *sometimes* actually win. And if I’m not gaming, you’ll probably find me ranting on <span
+                            style="border-bottom: 2px solid #fca311; font-weight: bold;">Reddit</span>, because who
+                        doesn’t love a good internet debate, right?
+                    </p>
+
+                    <p style="text-indent: 30px;">
+                        My life motto? <span style="border-bottom: 2px solid #14213d; font-weight: bold;">Work hard, party harder!</span>
+                        After a long day of coding and debugging (aka battling my computer), I love unwinding with
+                        friends, preferably somewhere surrounded by <span
+                            style="border-bottom: 2px solid #fca311; font-weight: bold;">mountains</span>. Yup, I’m all
+                        about those scenic views and adventure vibes. Oh, and <span
+                            style="border-bottom: 2px solid #fca311; font-weight: bold;">traveling</span>? Count me in!
+                        If it involves hopping on a plane, I’m there faster than you can say "boarding pass."
+                    </p>
+
+                    <p style="text-indent: 30px;">
+                        Fun fact: I’m also a master chef (at least in my own kitchen). There’s something oddly
+                        satisfying about whipping up a killer dish while blasting music and pretending I’m on a cooking
+                        show.
+                        Oh, and can we talk about <span
+                            style="border-bottom: 2px solid #fca311; font-weight: bold;">WFH</span>? It was cool for
+                        about five minutes, but now I’m all like, “When do I get to see actual humans again?!” So yeah,
+                        I’m more than ready to trade pajama pants for real pants and get back to the outside world!
+                    </p>
+
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="tools_expert">
                     <div class="skill_main">
                         <div class="skill_item">
-                            <h4>Python</h4>
+                            <h4>Python & Ruby</h4>
                             <div class="progress_br">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
@@ -209,13 +215,13 @@ Working on new technologies and addressing challenges with code is what I do dai
                             <h4>Flask & Django Frameworks</h4>
                             <div class="progress_br">
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
                                          aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="skill_item">
-                            <h4>Java Script</h4>
+                            <h4>Problem Solving</h4>
                             <div class="progress_br">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
@@ -233,7 +239,7 @@ Working on new technologies and addressing challenges with code is what I do dai
                             </div>
                         </div>
                         <div class="skill_item">
-                            <h4>Docker</h4>
+                            <h4>Docker & k8s</h4>
                             <div class="progress_br">
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
@@ -242,10 +248,19 @@ Working on new technologies and addressing challenges with code is what I do dai
                             </div>
                         </div>
                         <div class="skill_item">
-                            <h4>Ajax , Jquery</h4>
+                            <h4>SQL and NOSQL</h4>
                             <div class="progress_br">
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                         aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <h4></h4>
+                            <div class="progress_br">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                          aria-valuemax="100"></div>
                                 </div>
                             </div>
@@ -258,6 +273,28 @@ Working on new technologies and addressing challenges with code is what I do dai
     </div>
 </section>
 <!--================End Welcome Area =================-->
+
+<!-- LeetCode Widget -->
+<div id="leetcode-widget">
+    <div id="leetcode-widget-header">
+        <h4>LeetCode Progress</h4>
+        <button id="minimize-button">_</button>
+    </div>
+    <div class="leetcode-stats">
+        <p id="easy-solved">Easy Solved: Loading...</p>
+        <p id="medium-solved">Medium Solved: Loading...</p>
+        <p id="hard-solved">Hard Solved: Loading...</p>
+    </div>
+</div>
+
+<!-- Minimized LeetCode Icon -->
+<div id="leetcode-widget-minimized">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode Icon">
+</div>
+
+
+
+
 
 <!--================My Tabs Area =================-->
 <section class="mytabs_area p_120">
@@ -277,40 +314,14 @@ Working on new technologies and addressing challenges with code is what I do dai
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <ul class="list">
                         <li>
-                            <span style="background-color: #7ebe21;"></span>
+                            <span style="background-color: #FCA311;"></span>
                             <div class="media">
                                 <div class="d-flex">
-                                    <p style="color: white">June 2022 to present</p>
-                                </div>
-                                <div class="media-body">
-                                    <h4><i class="fab fa-hackerrank"></i> Hackerrank</h4>
-                                    <p>Operations Engineer<br/>Bengaluru (WFH)</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <span></span>
-                            <div class="media">
-                                <div class="d-flex">
-                                    <p style="color: white">January 2022 to May 2022</p>
+                                    <p style="color: white">July 2023 to Present</p>
                                 </div>
                                 <div class="media-body">
                                     <h4>Hackerrank</h4>
-                                    <p>SDET Intern<br/>Bengaluru (WFH)</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <span></span>
-                            <div class="media">
-                                <div class="d-flex" style="padding-right: 160px;">
-                                    <p>February 2021 to<br>
-                                        September 2021</p>
-                                </div>
-                                <div class="media-body">
-
-                                    <h4>Bar-at</h4>
-                                    <p>Full-Stack Web Developer (Intern)<br/>Online</p>
+                                    <p>Software Engineer II<br/>Bengaluru (WFH)</p>
                                 </div>
                             </div>
                         </li>
@@ -318,7 +329,44 @@ Working on new technologies and addressing challenges with code is what I do dai
                             <span></span>
                             <div class="media">
                                 <div class="d-flex">
-                                    <p>January 20 to February 21</p>
+                                    <p style="color: white">June 2022 to July 2023</p>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Hackerrank</h4>
+                                    <p>Software Engineer<br/>Bengaluru (WFH)</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="media">
+                                <div class="d-flex">
+                                    <p style="color: white">Jan 2022 to June 2022</p>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Hackerrank</h4>
+                                    <p>Software Engineer Intern<br/>Bengaluru (WFH)</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span></span>
+                            <div class="media">
+                                <div class="d-flex">
+                                    <p style="color: white">Feb 2021 to Sept 2021</p>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Bar-at</h4>
+                                    <p>Full-Stack Web Developer<br/>Online</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span></span>
+                            <div class="media">
+                                <div class="d-flex">
+                                    <p>Jan 2020 to Feb 2021</p>
                                 </div>
                                 <div class="media-body">
                                     <h4>Freelance</h4>
@@ -326,18 +374,7 @@ Working on new technologies and addressing challenges with code is what I do dai
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <span></span>
-                            <div class="media">
-                                <div class="d-flex">
-                                    <p>June 2019 to August 2019</p>
-                                </div>
-                                <div class="media-body">
-                                    <h4>Prudent Limited</h4>
-                                    <p>Web Developer ( Covid Application) <br/>Online</p>
-                                </div>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -346,11 +383,11 @@ Working on new technologies and addressing challenges with code is what I do dai
                             <span></span>
                             <div class="media">
                                 <div class="d-flex">
-                                    <p>March 2018 to present</p>
+                                    <p>March 2018 to Aug 2022</p>
                                 </div>
                                 <div class="media-body">
                                     <h4>NIIT University</h4>
-                                    <p>Computer Science Engineering <br/>6.5 GPA</p>
+                                    <p>Computer Science Engineering</p>
                                 </div>
                             </div>
                         </li>
@@ -391,11 +428,17 @@ Working on new technologies and addressing challenges with code is what I do dai
     <div class="container">
         <div class="main_title">
             <h2>My Projects</h2>
-            <p>I have been doing some interesting projects on web-development using Python frame works like Flask and
-                Django. I have included various kinds of API's, Authentications, PaymentGateways and many more..
-                And in this project I have also included my problem solving Repo, where I try and solve different kinds
-                of problems using the best Algorithms and Data-structures to the best of my Knowledge.
+            <p>
+                I’ve been diving into some pretty cool web development projects using Python frameworks like Flask and
+                Django. From integrating various APIs to setting up authentication systems and even implementing payment
+                gateways – it’s been a fun ride.
             </p>
+            <p>
+                Oh, and I couldn’t resist adding my problem-solving repo! Here, I tackle a variety of challenges,
+                applying the best algorithms and data structures I can think of. It’s all about pushing myself to solve
+                problems efficiently and creatively.
+            </p>
+
         </div>
         <div class="test">
             <div class="feature_inner row" id='repos'>
@@ -418,104 +461,6 @@ Working on new technologies and addressing challenges with code is what I do dai
 </section>
 <!--================End Feature Area =================-->
 
-<!--================Home Gallery Area =================-->
-<!--<section class="home_gallery_area p_120">-->
-<!--    <div class="container">-->
-<!--        <div class="main_title">-->
-<!--            <h2>Our Latest Featured Projects</h2>-->
-<!--            <p>Who are in extremely love with eco friendly system.</p>-->
-<!--        </div>-->
-<!--        <div class="isotope_fillter">-->
-<!--            <ul class="gallery_filter list">-->
-<!--                <li class="active" data-filter="*"><a href="#">All</a></li>-->
-<!--                <li data-filter=".brand"><a href="#">Vector</a></li>-->
-<!--                <li data-filter=".manipul"><a href="#">Raster</a></li>-->
-<!--                <li data-filter=".creative"><a href="#">UI/UX</a></li>-->
-<!--                <li data-filter=".design"><a href="#">Printing</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="container">-->
-<!--        <div class="gallery_f_inner row imageGallery1">-->
-<!--            <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">-->
-<!--                <div class="h_gallery_item">-->
-<!--                    <div class="g_img_item">-->
-<!--                        <img class="img-fluid" src="img/gallery/project-1.jpg" alt="">-->
-<!--                        <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>-->
-<!--                    </div>-->
-<!--                    <div class="g_item_text">-->
-<!--                        <h4>3D Helmet Design</h4>-->
-<!--                        <p>Client Project</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">-->
-<!--                <div class="h_gallery_item">-->
-<!--                    <div class="g_img_item">-->
-<!--                        <img class="img-fluid" src="img/gallery/project-2.jpg" alt="">-->
-<!--                        <a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>-->
-<!--                    </div>-->
-<!--                    <div class="g_item_text">-->
-<!--                        <h4>2D Vinyl Design</h4>-->
-<!--                        <p>Client Project</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">-->
-<!--                <div class="h_gallery_item">-->
-<!--                    <div class="g_img_item">-->
-<!--                        <img class="img-fluid" src="img/gallery/project-3.jpg" alt="">-->
-<!--                        <a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>-->
-<!--                    </div>-->
-<!--                    <div class="g_item_text">-->
-<!--                        <h4>Creative Poster Design</h4>-->
-<!--                        <p>Client Project</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-4 col-sm-6 brand creative print">-->
-<!--                <div class="h_gallery_item">-->
-<!--                    <div class="g_img_item">-->
-<!--                        <img class="img-fluid" src="img/gallery/project-4.jpg" alt="">-->
-<!--                        <a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>-->
-<!--                    </div>-->
-<!--                    <div class="g_item_text">-->
-<!--                        <h4>Embosed Logo Design</h4>-->
-<!--                        <p>Client Project</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">-->
-<!--                <div class="h_gallery_item">-->
-<!--                    <div class="g_img_item">-->
-<!--                        <img class="img-fluid" src="img/gallery/project-5.jpg" alt="">-->
-<!--                        <a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>-->
-<!--                    </div>-->
-<!--                    <div class="g_item_text">-->
-<!--                        <h4>3D Disposable Bottle</h4>-->
-<!--                        <p>Client Project</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-md-4 col-sm-6 brand creative">-->
-<!--                <div class="h_gallery_item">-->
-<!--                    <div class="g_img_item">-->
-<!--                        <img class="img-fluid" src="img/gallery/project-6.jpg" alt="">-->
-<!--                        <a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>-->
-<!--                    </div>-->
-<!--                    <div class="g_item_text">-->
-<!--                        <h4>3D Logo Design</h4>-->
-<!--                        <p>Client Project</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="more_btn">-->
-<!--            <a class="main_btn" href="#">Load More Items</a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!--================End Home Gallery Area =================-->
 
 <!--================Testimonials Area =================-->
 <section class="testimonials_area p_120">
@@ -570,7 +515,6 @@ Working on new technologies and addressing challenges with code is what I do dai
 
                 </aside>
             </div>
-
             <div class="col-lg-2">
                 <aside class="f_widget social_widget">
                     <div class="f_title">
@@ -620,37 +564,185 @@ Working on new technologies and addressing challenges with code is what I do dai
 <script src="js/theme.js"></script>
 <script>
     function projects() {
+        const repoContainer = $('#repos');
+        repoContainer.html('<p>Loading projects...</p>');
 
         $.ajax({
             type: "GET",
             url: "https://api.github.com/users/iamvarshith/repos",
-            async: !0,
-            cache: !1,
             success: function (data) {
-                for (const k of data) {
-                    let img_url = "img/" + k.name + ".png"
-
-                    console.log(img_url)
-                    $('#repos').append(`<div class="col-lg-4 col-md-6"  >
-
-                                           <div class="feature_item">
-                                           <img style="position: relative; max-width: 100%;padding-bottom: 5vh " src="img/${k.name}.png"\n
-                                                alt="img/iamvarshith.png">
-                                                <h4> ${k.name} </h4>
-                                                <a style="align-self: end" href="${k.owner.html_url}"><h6>${k.owner.login}</h6></a>
-                                                <p> ${k.description}</p>
-                                               <div style="text-align: center; padding-top: 20px"><a href='${k.html_url}'
-                                                                                                      class="genric-btn info-border radius">Know More</a>
-                                                </div>
-                                           </div>`)
-
+                if (data.length === 0) {
+                    repoContainer.html('<p>No projects available at the moment.</p>');
+                    return;
                 }
-                
-            },
 
+                let projectHTML = '';
+                data.forEach((repo, index) => {
+                    const {name, description, html_url} = repo;
+                    const imgSrc = `img/${name}.png`; // Image based on repository name
+                    const defaultImg = `img/default.jpg`; // Default fallback image
+                    const repoDesc = description ? description : 'No description available.';
+
+                    projectHTML += `
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="feature_item" id="feature-${index}">
+                                <img src="${imgSrc}" alt="${name}" class="img-fluid" onerror="this.onerror=null;this.src='${defaultImg}';">
+                                <h4>${name}</h4>
+                                <p class="description" id="description-${index}">${repoDesc}</p>
+                                <span class="read-more" data-index="${index}">Read More</span>
+                                <a href="${html_url}" class="btn btn-custom mt-3" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                repoContainer.html(projectHTML);
+
+                // Add event listener for "Read More"
+                $('.read-more').on('click', function () {
+                    const index = $(this).data('index');
+                    const featureItem = $(`#feature-${index}`);
+                    const description = $(`#description-${index}`);
+
+                    if (featureItem.hasClass('expanded')) {
+                        // Contract the box
+                        description.removeClass('description_expanded');
+                        featureItem.removeClass('expanded');
+                        $(this).text('Read More');
+                    } else {
+                        // Expand the box
+                        description.addClass('description_expanded');
+                        featureItem.addClass('expanded');
+                        $(this).text('Read Less');
+                    }
+                });
+            },
+            error: function () {
+                repoContainer.html('<p>Failed to load projects. Please try again later.</p>');
+            }
         });
     }
-
 </script>
+
+<script>
+    var typed = new Typed('#typed-text', {
+        strings: [
+            "Software Developer",
+            "Cloud Enthusiast",
+            "Problem Solver",
+            "Tech Explorer"
+        ],
+        typeSpeed: 60,       // Speed at which the text types out
+        backSpeed: 30,       // Speed at which it backspaces
+        backDelay: 1500,     // Delay before starting to backspace
+        startDelay: 1000,    // Delay before starting the typing effect
+        loop: true,          // Loop the animation
+        showCursor: false,    // Show the blinking cursor
+        cursorChar: '!',     // Cursor character
+    });
+</script>
+
+<script>
+    // Data fetching logic for LeetCode
+    const apiUrl = 'https://leetcode.com/graphql';
+    const queryPayload = {
+        "query": `
+            query userProfileUserQuestionProgressV2($userSlug: String!) {
+              userProfileUserQuestionProgressV2(userSlug: $userSlug) {
+                numAcceptedQuestions {
+                  count
+                  difficulty
+                }
+                numFailedQuestions {
+                  count
+                  difficulty
+                }
+                numUntouchedQuestions {
+                  count
+                  difficulty
+                }
+                userSessionBeatsPercentage {
+                  difficulty
+                  percentage
+                }
+              }
+            }
+        `,
+        "variables": {"userSlug": "varshithvmv"},
+        "operationName": "userProfileUserQuestionProgressV2"
+    };
+
+    // Use a CORS proxy for development purposes
+    const proxyUrl = 'https://thingproxy.freeboard.io/fetch/';
+
+    function fetchLeetCodeData() {
+        fetch(proxyUrl + apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(queryPayload)
+        })
+        .then(response => response.json())
+        .then(data => {
+            const leetData = data.data.userProfileUserQuestionProgressV2;
+            const acceptedQuestions = leetData.numAcceptedQuestions;
+
+
+            document.getElementById('easy-solved').innerText = `Easy Solved: ${acceptedQuestions.find(q => q.difficulty === 'EASY').count}`;
+            document.getElementById('medium-solved').innerText = `Medium Solved: ${acceptedQuestions.find(q => q.difficulty === 'MEDIUM').count}`;
+            document.getElementById('hard-solved').innerText = `Hard Solved: ${acceptedQuestions.find(q => q.difficulty === 'HARD').count}`;
+
+            })
+        .catch(error => console.error('Error fetching LeetCode data:', error));
+    }
+
+    fetchLeetCodeData();
+
+    // Movable widget logic for both full widget and minimized icon
+    function makeMovable(element) {
+        let offsetX = 0, offsetY = 0, isDragging = false;
+
+        element.onmousedown = function(e) {
+            isDragging = true;
+            offsetX = e.clientX - element.offsetLeft;
+            offsetY = e.clientY - element.offsetTop;
+            document.onmousemove = function(e) {
+                if (isDragging) {
+                    element.style.left = e.clientX - offsetX + 'px';
+                    element.style.top = e.clientY - offsetY + 'px';
+                    element.style.bottom = 'auto';
+                    element.style.right = 'auto';
+                }
+            };
+            document.onmouseup = function() {
+                isDragging = false;
+                document.onmousemove = null;
+            };
+        };
+    }
+
+    // Apply movable function to both the minimized and expanded widgets
+    makeMovable(document.getElementById('leetcode-widget'));
+    makeMovable(document.getElementById('leetcode-widget-minimized'));
+
+    // Minimize functionality
+    const minimizeButton = document.getElementById('minimize-button');
+    const minimizedWidget = document.getElementById('leetcode-widget-minimized');
+    const fullWidget = document.getElementById('leetcode-widget');
+
+    minimizeButton.addEventListener('click', function() {
+        fullWidget.style.display = 'none';
+        minimizedWidget.style.display = 'flex';
+    });
+
+    minimizedWidget.addEventListener('click', function() {
+        minimizedWidget.style.display = 'none';
+        fullWidget.style.display = 'block';
+    });
+</script>
+
+
+
 </body>
 </html>
