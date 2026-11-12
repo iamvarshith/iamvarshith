@@ -547,6 +547,28 @@ Varshith().serve()`
         }, 2200);
     })();
 
+    (function photos() {
+        const stack = $("#photos");
+        if (!stack) return;
+        let busy = false;
+        const shuffle = () => {
+            if (busy) return;
+            busy = true;
+            const cards = $$(".pol", stack);
+            const top = cards.find((c) => c.dataset.pos === "0");
+            top.classList.add("is-flying");
+            setTimeout(() => {
+                cards.forEach((c) => { c.dataset.pos = String((+c.dataset.pos + cards.length - 1) % cards.length); });
+                top.classList.remove("is-flying");
+                setTimeout(() => { busy = false; }, 350);
+            }, reduced ? 0 : 320);
+        };
+        stack.addEventListener("click", shuffle);
+        stack.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); shuffle(); }
+        });
+    })();
+
     $$("a[data-jump]").forEach((a) => a.addEventListener("click", (e) => {
         const target = $(a.getAttribute("href"));
         if (!target) return;

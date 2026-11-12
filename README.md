@@ -1,36 +1,78 @@
-<h1 align="center">Hi 👋, I'm Varsh</h1>
-<h3 align="center">Senior Software Engineer, Agentic AI @ Workato</h3>
+![Hi, I'm Varsh: Muthya Varshith, Senior Software Engineer building agentic AI at Workato. Engineer, hiker, gamer, chef and lazy runner.](img/readme/banner.svg)
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=iamvarshith" alt="iamvarshith" /></a> </p>
+**[iamvarshith.dev](https://www.iamvarshith.dev)** · [LinkedIn](https://www.linkedin.com/in/muthyavarshith/) · [blog](https://blog.iamvarshith.dev) · [resume](https://www.iamvarshith.dev/resume.html) · [me@iamvarshith.dev](mailto:me@iamvarshith.dev)
 
-- 🏔️ I build **AI agents for customer support** at Workato (AgentX Support): RAG, guardrails, MCP and the infra that keeps them running
+## $ whoami
 
-- 🔭 Before that: **DeepConverse** (acquired by Workato), **HackerRank** and **Bar-At Technologies**
+I build **AI agents that resolve customer support conversations end to end** at Workato. I was the lead engineer on
+[AgentX Support](https://docs.workato.com/en/agentic/agentx-support), Workato's AI support platform, and took it from
+idea to launch in six months. Today I work on agentic AI as a Senior Software Engineer.
 
-- 💬 Ask me about **Agentic AI, RAG, LLM guardrails, Python, AWS, Kubernetes, Terraform, Elasticsearch**
+Most of my work sits where LLMs meet production: fine-tuning models for the jobs a prompt can't do reliably, giving
+agents real skills instead of canned answers, and putting guardrails around all of it so it holds up at a million
+conversations a day.
 
-- 👨‍💻 Portfolio: [iamvarshith.dev](https://www.iamvarshith.dev)
+## $ cat [agentic-ai.md](http://agentic-ai.md)
 
-- 📄 Resume: [iamvarshith.dev/resume.html](https://www.iamvarshith.dev/resume.html)
+**LoRA fine-tuning for PII redaction.** A redaction service for Japanese, Korean, Chinese and four more Asian
+languages. LoRA-fine-tuned classifiers do the heavy lifting, with regex and rule-based checks as a safety net:
+**99.9998% accuracy** across 2M test conversations, on traffic of about a million conversations a day per customer.
 
-- 📝 I write on [blog.iamvarshith.dev](https://blog.iamvarshith.dev)
+**Agents with real skills.** I co-architected AgentX Support, where an agent's skills are Workato recipes and
+connectors, extended with **MCP servers** and **Workato Genies**. A flow engine sits between the agent and the
+decision tree and hands the conversation to a human the moment the AI can't answer.
 
-- 📫 Reach me at **me@iamvarshith.dev** or on [LinkedIn](https://www.linkedin.com/in/muthyavarshith/)
+**RAG that cites its sources.** Our own crawlers, Airflow fanning chunking out across workers, **Nomic embeddings** and
+Elasticsearch as the vector store.
 
-- 🎮 Off the clock: Counter-Strike, mountains, cooking, and running (lazily)
+**Copilots that pay for themselves.** The Zendesk Copilot summarizes the ticket, pulls the knowledge an agent needs,
+surfaces similar past resolutions and flags live incidents. It brings in **$500K+ ARR** on its own.
 
-- ⚡ Fun fact **I think stack overflow always copies my code for some reason**
+**Guardrailed model upgrades.** I moved our production LLMs to newer models behind guardrails, cutting model costs.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/muthyavarshith/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="muthyavarshith" height="30" width="40" /></a>
-<a href="https://codepen.io/iamvarshith" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="iamvarshith" height="30" width="40" /></a>
-<a href="https://dev.to/iamvarshith" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="iamvarshith" height="30" width="40" /></a>
-<a href="https://twitter.com/varshithvmv" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="varshithvmv" height="30" width="40" /></a>
-<a href="https://instagram.com/sharmavmv" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sharmavmv" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/iamvarshith" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@varshithmuthya_1" height="30" width="40" /></a>
-<a href="https://discord.gg/Tomdyck&harry#6741" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="Tomdyck&harry#6741" height="30" width="40" /></a>
-</p>
+**Pipelines that keep up.** An event-driven voice and chat pipeline (pre-processing, redaction, summarization and
+per-customer tasks) across nine services, each handling **10,000+ requests per second**.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.ruby-lang.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a> <a href="https://fastapi.tiangolo.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="django" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.terraform.io" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="terraform" width="40" height="40"/> </a> <a href="https://www.elastic.co/elasticsearch" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/elasticsearch/elasticsearch-original.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://kafka.apache.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg" alt="kafka" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.mongodb.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> </p>
+```python
+# agent.py: the shape of what I build
+async def resolve(conversation):
+    text = redact_pii(conversation)                  # LoRA-tuned classifiers, 7 languages
+    docs = await retrieve(text, k=8)                 # Nomic embeddings -> Elasticsearch
+    plan = await agent.plan(text, docs, skills=workato_recipes + mcp_tools)
+
+    if not guardrails.allow(plan):
+        return handoff_to_human(conversation, summary=summarize(conversation))
+    return await agent.act(plan)
+```
+
+
+
+## $ git log --career
+
+![Career as a mountain climb from NIIT University in 2018 to Senior Software Engineer at Workato in 2026](img/readme/climb.svg)
+
+- **Workato** · 2024 – now · Senior SWE, Agentic AI. Before that, lead engineer on AgentX Support.
+- **DeepConverse** · acquired by Workato in 2024 · moved the whole platform into Workato with Terraform: 32
+microservices and about a million conversations a day, first onto AWS EKS, then onto Workato's Kubernetes clusters.
+- **HackerRank** · 2022 – 2024 · an event-driven regression testing platform that cut release QA from about a week to
+hours; Phoenix, a self-healing Selenium framework that repairs 85% of broken tests (98% once we added LLMs); ChatOps
+and Terraform tooling used by ~300 engineers.
+- **Bar-At Technologies** · 2021 · legal search over past civil court rulings on Elasticsearch, with a cell-based
+serverless backend on AWS Lambda and DynamoDB.
+- **NIIT University** · 2018 – 2022 · B.Tech in Computer Science.
+
+
+
+## $ ls ~/stack
+
+![Stack: LLMs, agentic AI, RAG, LoRA fine-tuning, embeddings, MCP; Python, Ruby, FastAPI, Django; Elasticsearch, Kafka, ClickHouse, PostgreSQL; AWS, Kubernetes, Docker, Terraform](img/readme/stack.svg)
+
+## $ cat [hello.md](http://hello.md)
+
+Off the clock, weekends belong to the mountains, most nights end in a Counter-Strike match I *sometimes* win, and I
+cook like I'm on a TV show. I also run. Lazily. Very lazily.
+
+I write on [blog.iamvarshith.dev](https://blog.iamvarshith.dev), and I'm fairly sure Stack Overflow keeps copying my
+code.
+
+Building agents, or just want to talk mountains? [Say hi](mailto:me@iamvarshith.dev), I write back.

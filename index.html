@@ -72,7 +72,7 @@
 <header class="nav" id="nav">
     <div class="container nav__inner">
         <a class="brand" href="#top" aria-label="Home">
-            <svg class="brand__mark" viewBox="0 0 30 24" aria-hidden="true"><path d="M1 22 10 8l5 7 4-5 10 12z"/><path d="M10 8V1.5l6 2.2-6 2.2"/></svg><span class="brand__prompt">~/</span>varshith<span class="brand__caret"></span>
+            <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="8"/><path d="M9 10l7 13 7-13"/></svg>varsh<span class="brand__dot">.</span>
         </a>
         <nav class="nav__links" id="navLinks" aria-label="Primary">
             <a href="#about">./about</a>
@@ -161,21 +161,21 @@
                 <svg class="sticker sticker--peak" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 54 25 20l9 14 8-10 18 30z"/><path d="m19 30 6 4 5-5"/><path d="M25 20V7l9 3.5-9 3.5"/></svg>
                 <svg class="sticker sticker--pan" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="26" cy="40" rx="18" ry="11"/><path d="M43 36l17-9"/><path d="M19 22c-3-4 3-6 0-10M27 20c-3-4 3-6 0-10M35 22c-3-4 3-6 0-10"/></svg>
                 <svg class="sticker sticker--plane" viewBox="0 0 64 64" aria-hidden="true"><path d="M5 30 59 8 45 56 31 38z"/><path d="M59 8 31 38v14l7-9"/></svg>
-                <figure class="portrait">
-                    <div class="portrait__bar">
-                        <div class="dots"><i></i><i></i><i></i></div>
-                        <span>portrait.jpg</span>
-                    </div>
-                    <div class="portrait__img">
-                        <img src="img/varshith.jpg" alt="Muthya Varshith smiling with arms crossed" loading="lazy"
-                             width="900" height="908">
-                        <span class="portrait__scan"></span>
-                    </div>
-                    <figcaption>
-                        <span class="t-mint">●</span> Hyderabad, India
-                        <span class="t-dim">· usually online</span>
-                    </figcaption>
-                </figure>
+                <div class="photos" id="photos" role="button" tabindex="0" data-cursor="shuffle" aria-label="Photos of Varsh. Click to shuffle.">
+                    <figure class="pol" data-pos="0">
+                        <img src="img/me/beach.jpg" alt="Varsh smiling on a beach in sunglasses and an Amsterdam t-shirt" width="900" height="1125">
+                        <figcaption>sunglasses on, out of office</figcaption>
+                    </figure>
+                    <figure class="pol" data-pos="1">
+                        <img src="img/me/rock.jpg" alt="Varsh striking a pose on a rock in clear blue sea" width="900" height="1125" loading="lazy">
+                        <figcaption>found a rock. struck a pose.</figcaption>
+                    </figure>
+                    <figure class="pol" data-pos="2">
+                        <img src="img/me/rooftop.jpg" alt="Varsh on a rooftop at night with a city skyline behind him" width="900" height="1125" loading="lazy">
+                        <figcaption>city lights &gt; screen lights</figcaption>
+                    </figure>
+                </div>
+                <p class="photos__meta"><span class="t-mint">●</span> Hyderabad, India <span class="t-dim">· click to shuffle</span></p>
                 </div>
 
                 <div class="about__text">
