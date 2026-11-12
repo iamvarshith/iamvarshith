@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muthya Varshith Vankamamidi – Resume</title>
+    <meta name="description" content="Resume of Muthya Varshith Vankamamidi, Senior Software Engineer (Agentic AI) at Workato.">
+    <style>
+        @page { size: A4; margin: 9mm 12mm; }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 9.2pt;
+            line-height: 1.245;
+            color: #111;
+            background: #fff;
+        }
+
+        main { max-width: 210mm; margin: 0 auto; }
+
+        a { color: inherit; text-decoration: none; }
+
+        h1 { font-size: 19pt; letter-spacing: .02em; margin: 0; font-weight: 700; }
+        .headline { font-size: 10.5pt; font-weight: 600; color: #0b6b5e; margin: 2px 0 4px; }
+        .contact { font-size: 8.5pt; color: #333; margin: 0; }
+
+        h2 {
+            font-size: 10pt; text-transform: uppercase; letter-spacing: .08em;
+            margin: 7px 0 3px; padding-bottom: 1px; border-bottom: 1px solid #222;
+        }
+
+        p { margin: 0; }
+
+        .role { margin-top: 5px; }
+        .row { display: flex; justify-content: space-between; gap: 12px; }
+        .company { font-weight: 700; font-size: 10pt; }
+        .where { color: #333; }
+        .titles { margin: 1px 0 2px; }
+        .titles .row { font-size: 9.2pt; }
+        .titles .title { font-weight: 600; }
+        .date { white-space: nowrap; color: #333; }
+
+        ul { margin: 2px 0 0; padding-left: 14px; }
+        li { margin: 0 0 1px; }
+
+        .skills p { margin-bottom: 1px; }
+        .skills b, .label { font-weight: 700; }
+
+        .download {
+            position: fixed; right: 18px; bottom: 18px; padding: 9px 14px; border-radius: 8px;
+            background: #0b6b5e; color: #fff; font: 600 13px system-ui, sans-serif;
+        }
+
+        @media screen {
+            body { background: #eef0f3; padding: 24px 0; }
+            main { background: #fff; padding: 9mm 12mm; box-shadow: 0 10px 40px rgba(0, 0, 0, .12); }
+        }
+
+        @media print {
+            .download { display: none; }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Muthya Varshith Vankamamidi</h1>
+        <p class="headline">Senior Software Engineer | Agentic AI, RAG &amp; LLM Systems</p>
+        <p class="contact">
+            Hyderabad, India | <a href="mailto:me@iamvarshith.dev">me@iamvarshith.dev</a> |
+            <a href="https://www.linkedin.com/in/muthyavarshith/">linkedin.com/in/muthyavarshith</a> |
+            <a href="https://github.com/iamvarshith">github.com/iamvarshith</a> |
+            <a href="https://www.iamvarshith.dev">iamvarshith.dev</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <p>
+            Senior Software Engineer with 6 years of experience building agentic AI and developer platforms at scale.
+            Lead engineer of Workato's AgentX Support; built AI agents, RAG pipelines, 99.9998%-accurate
+            multilingual PII detection and 10K+ RPS event-driven pipelines for customer support at 1M+
+            conversations a day, plus a Zendesk Copilot generating $500K+ ARR. Previously built HackerRank's event-driven testing and CI/CD platform for ~300
+            engineers, cutting release QA from a week to hours.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="role">
+            <div class="row">
+                <span class="company">Workato</span>
+                <span class="where">Remote, India</span>
+            </div>
+            <div class="titles">
+                <div class="row"><span class="title">Senior Software Engineer, Agentic AI</span><span class="date">Mar 2026 – Present</span></div>
+                <div class="row"><span class="title">Software Engineer</span><span class="date">Dec 2024 – Feb 2026</span></div>
+                <div class="row"><span class="title">Software Engineer, DeepConverse (acquired by Workato)</span><span class="date">Sep 2024 – Dec 2024</span></div>
+            </div>
+            <ul>
+                <li>Lead engineer and co-architect (with the VP of Engineering) of <b>AgentX Support</b>, Workato's agentic
+                    support platform on recipes, an AI agent framework and connector-backed skills; owned
+                    infrastructure and engineering, shipped in six months.</li>
+                <li>Designed the flow engine between the agent framework and decision trees that hands conversations
+                    to human agents, including a Salesforce MIAW handover service; built search and agent analytics on
+                    Kafka, ClickHouse and Holistics.</li>
+                <li>Built the RAG knowledge pipeline: custom crawlers, Apache Airflow-orchestrated chunking across
+                    parallel workers, Nomic Embed v1.5 embeddings and Elasticsearch vector search.</li>
+                <li>Built a multilingual PII detection service for 7 Asian languages (including Japanese, Korean and
+                    Chinese) on a support platform handling 1M conversations/day per customer. LoRA fine-tuned
+                    classifiers reached 99.89% accuracy; regex and rule-based layers raised it to <b>99.9998%</b>
+                    across 2M conversations, on a multi-million-dollar project delivered by five engineers.</li>
+                <li>Built an event-driven voice and chat data pipeline (pre-processing, PII redaction,
+                    post-processing, summarization, per-customer tasks) across 9 services, each sustaining
+                    <b>10,000+ RPS</b>.</li>
+                <li>Built the Zendesk Copilot, which summarizes tickets, retrieves relevant knowledge, finds past
+                    tickets with similar resolutions and flags live incidents, generating <b>$500K+ ARR</b>.</li>
+                <li>Migrated the legacy DeepConverse platform into Workato with Terraform (32 microservices, ~1M
+                    conversations/day, MongoDB, PostgreSQL, Elasticsearch, Redshift): first onto AWS EKS, then onto
+                    Workato's Kubernetes clusters, handing infrastructure over to the infra team.</li>
+                <li>Integrated MCP servers and Workato Genies, led guardrailed LLM model upgrades that significantly
+                    cut model costs, and resolved customer and security issues for legacy accounts.</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="row">
+                <span class="company">HackerRank</span>
+                <span class="where">Bengaluru, India</span>
+            </div>
+            <div class="titles">
+                <div class="row"><span class="title">Software Engineer II</span><span class="date">Jul 2023 – Sep 2024</span></div>
+                <div class="row"><span class="title">Software Engineer</span><span class="date">Jun 2022 – Jul 2023</span></div>
+                <div class="row"><span class="title">Software Engineer Intern</span><span class="date">Jan 2022 – Jun 2022</span></div>
+            </div>
+            <ul>
+                <li>Architected an event-driven regression testing platform (Terraform, RabbitMQ, Argo CD, GitHub
+                    Actions) that provisions ephemeral environments with distributed databases per change and runs
+                    only impacted tests in parallel; cut major-release QA from <b>~1 week to hours</b>, test
+                    automation time by 60% and flaky tests by 38%.</li>
+                <li>Built Phoenix, a self-healing Selenium UI testing framework that automatically repaired
+                    <b>85%</b> of broken tests via DOM-similarity matching; later extended with LLMs to 98% and still
+                    in production.</li>
+                <li>Built Slack ChatOps bots and Terraform infrastructure-as-code tooling used by <b>~300
+                    engineers</b> across 8 products to deploy, test and re-run pipelines without per-environment
+                    VPNs, reducing environment re-creation from days to minutes.</li>
+                <li>Introduced Elasticsearch and Kibana logging and Slack failure alerting for test pipelines;
+                    received the Kudos Award for a video-recording framework that generated data for ML plagiarism
+                    detection.</li>
+            </ul>
+        </div>
+
+        <div class="role">
+            <div class="row">
+                <span><span class="company">Bar-At Technologies</span> – Full Stack Developer, Hyderabad</span>
+                <span class="date">Feb 2021 – Sep 2021</span>
+            </div>
+            <ul>
+                <li>Built legal search over past civil court rulings (Elasticsearch) on a cell-based serverless AWS
+                    backend: Lambda, DynamoDB.</li>
+            </ul>
+            <div class="row">
+                <span><span class="company">Freelance</span> – Software Developer (Python, Flask, Django)</span>
+                <span class="date">Jan 2020 – Feb 2021</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <p><b>AI &amp; LLMs:</b> Agentic AI, AI Agents, RAG, LLM Guardrails, MCP, LoRA Fine-tuning, PII Detection,
+            Embeddings (Nomic), Vector Search, Prompt Engineering, OpenAI</p>
+        <p><b>Languages &amp; Frameworks:</b> Python, Ruby, SQL, JavaScript, Shell, FastAPI, Django, Flask, REST APIs,
+            Selenium</p>
+        <p><b>Data:</b> Elasticsearch, Kafka, ClickHouse, PostgreSQL, MongoDB, Amazon Redshift, MySQL, Apache Airflow, Holistics, Kibana</p>
+        <p><b>Cloud &amp; DevOps:</b> AWS, EKS, Kubernetes, Docker, Terraform, Argo CD, GitHub Actions, Jenkins, RabbitMQ,
+            CI/CD, Event-Driven Architecture, Microservices</p>
+        <p><b>Platforms:</b> Workato (Recipes, Connectors, Genies), Zendesk, Salesforce MIAW, Slack API</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="row">
+            <span><span class="label">B.Tech, Computer Science and Engineering</span> – NIIT University, Neemrana</span>
+            <span class="date">2018 – 2022</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications &amp; Awards</h2>
+        <p>Kudos Award, HackerRank Employee Awards | HackerRank Certified: REST API (Intermediate), Python (Basic),
+            CSS | Tech Team Lead, siNUsoid v4 tech fest, NIIT University</p>
+    </section>
+</main>
+<a class="download" href="img/resume.pdf" download>Download PDF</a>
+</body>
+</html>
